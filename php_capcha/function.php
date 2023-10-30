@@ -16,9 +16,15 @@
 
     function makePNGCaptcha($captcha){
         $img = imagecreatefromjpeg("captcha.jpeg");
-        $font = "PlaypenSanst.ttf";
+        $fontSize = 30;
+        $angle = -7;
+        $x = 30;
+        $y = 40;
         $color = imagecolorallocate($img, 255, 255, 0);
-        imagettftext($img, 30, -7, 10, 45, $color, $font ,$captcha);
+        $font = "PlaypenSanst.ttf";
+        
+        imagettftext($img, $fontSize, $angle, $x, $y, $color, $font ,$captcha);
+
         imagepng($img);
         imagedestroy($img);
     }
