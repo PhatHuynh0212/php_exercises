@@ -15,15 +15,25 @@
 
 
     function makePNGCaptcha($captcha){
-        $img = imagecreatefromjpeg("captcha.jpeg");
-        $fontSize = 30;
-        $angle = -7;
-        $x = 30;
-        $y = 40;
-        $color = imagecolorallocate($img, 255, 255, 0);
-        $font = "PlaypenSanst.ttf";
+        $img = imagecreatefromjpeg("./img/captcha.jpg");
+        $fontSize = [28, 30, 33, 35];
+        $angle = [-7, -3, 3, 5];
+        $x = 20;
+        $y = 50;
+        $color = [
+            imagecolorallocate($img, 0, 0, 0),
+            imagecolorallocate($img, 17, 200, 5),
+            imagecolorallocate($img, 16, 206, 189),
+            imagecolorallocate($img, 245, 10, 10)
+        ];
+        $font = [
+            "./fonts/PlaypenSanst.ttf",
+            "./fonts/Butcherman.ttf",
+            "./fonts/MontserratAlternates.ttf",
+            "./fonts/PixelifySans.ttf"
+        ];
         
-        imagettftext($img, $fontSize, $angle, $x, $y, $color, $font ,$captcha);
+        imagettftext($img, $fontSize[rand(0,3)], $angle[rand(0,3)], $x, $y, $color[rand(0,3)], $font[rand(0,3)] ,$captcha);
 
         imagepng($img);
         imagedestroy($img);
