@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+  }
+  
+  #container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #banner {
+    height: 150px;
+    background-color: red;
+  }
+  
+  #menu {
+    height: 30px;
+    padding: 5px;
+    background-color: darkcyan;
+  }
+  
+  #lmenu {
+    width: 150px;
+    padding: 10px;
+    background-color: green;
+    float: left;
+  }
+  
+  #content {
+    width: 810px;
+    padding: 10px;
+    background-color: grey;
+    float: left;
+  }
+  
+  a:hover {
+    color: yellow;
+  }
+  
+  a:visited,
+  a:link {
+    color: white;
+  }
+  a.page-link {
+    color: blue;
+  }
+  .sp {
+    width: 150px;
+    padding: 10px;
+    background-color: darkcyan;
+    margin: 5px;
+    float: left;
+  }
+  

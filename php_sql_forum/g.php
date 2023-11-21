@@ -41,3 +41,6 @@
 
     echo "</table>";
 ?>
+
+<!-- INSERT INTO tbl_bantin (id_bantin, id_danhmuc, tieude, hinhanh, noidung, tukhoa, nguontin, like_bantin, rating) 
+VALUES ( 7, (SELECT id_danhmuc FROM tbl_danhmuc WHERE ten_danhmuc = 'Công nghệ'), 'Tiêu đề bản tin mới', 'anh.jpg', 'Nội dung bản tin mới', 'congnghe', 'Nguồn tin mới', 0,0 ); -->

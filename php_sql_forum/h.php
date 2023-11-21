@@ -37,3 +37,9 @@
 
     echo "</table>";
 ?>
+
+<!-- INSERT INTO tbl_binhluan (id_binhluan, tieude, noidung, like_binhluan, thoigian, id_bantin, id_docgia)
+VALUES (5,'Tiêu đề bình luận mới', 'Nội dung bình luận mới', 0, '2023-11-06', 
+(SELECT id_bantin
+FROM tbl_bantin
+WHERE tieude = 'Liệu Samsung sẽ thành công với Galaxy S4 hay sẽ rơi vào tình trạng suy giảm sự tin cậy của nhà đầu tư như Apple'), 3); -->
