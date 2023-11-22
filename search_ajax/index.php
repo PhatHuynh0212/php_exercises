@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div id="app">
+        <div class="wrap_container">
             <div class="row mb-4">
                 <div class="col-md-6 offset-md-3">
-                    <h2 class="text-center">
+                    <h2 class="text-center" style="margin-bottom: 15px;">
                         <a href="index.php" style="text-decoration: none; color: inherit;">Film Search</a>
                     </h2>
                     <div class="input-group">
-                        <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm ..." name="q">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm ..." name="q" style='background: transparent; border-radius: 90px; border-color: black;'>
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary ms-3" type="submit" onclick="search()">Search</button>
+                            <button class="btn btn-outline-primary ms-3" type="submit" onclick="search()" style="border-radius: 90px;">Search</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             films.forEach((film) => {
                 var cardHtml =
                     `<div class='col-md-4'>
-                        <div class='card'>
+                        <div class='card' style='background: transparent;'>
                             <img src='${film.anh}' class='card-img-top' alt='Film Image'>
                             <div class='card-body'>
                                 <h5 class='card-title'>${film.ten}</h5>

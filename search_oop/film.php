@@ -36,7 +36,7 @@ class Film {
 
     public function displayCard() {
         echo "<div class='col-md-4'>";
-        echo "<div class='card'>";
+        echo "<div class='card' style='background: transparent;'>";
         echo "<img src='{$this->anh}' class='card-img-top' alt='Film Image'>";
         echo "<div class='card-body'>";
         echo "<h5 class='card-title text-center'>{$this->ten}</h5>";

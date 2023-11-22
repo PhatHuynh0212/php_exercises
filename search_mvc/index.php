@@ -10,18 +10,20 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div id="app">
+        <div class="wrap_container">
             <div class="row mb-4">
                 <div class="col-md-6 offset-md-3">
-                    <h2 class="text-center"><a href="index.php" style="text-decoration: none; color: inherit;">Film Search</a></h2>
+                    <h2 class="text-center" style="margin-bottom: 15px;">
+                        <a href="index.php" style="text-decoration: none; color: inherit;">Film Search</a>
+                    </h2>
                     <form id="searchForm" action="index.php" method="GET">
                         <div class="input-group">
                         <?php
                                 $searchQuery = isset($_GET['q']) ? $_GET['q'] : '';                              
-                                echo "<input type='text' id='searchInput' class='form-control' placeholder='Tìm kiếm ...' name='q' value='$searchQuery'>";
+                                echo "<input type='text' id='searchInput' class='form-control' placeholder='Tìm kiếm ...' name='q' value='$searchQuery' style='background: transparent; border-radius: 90px; border-color: black;'>";
                             ?>
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary ms-3" type="submit" name="searchBtn">Search</button>
+                                <button class="btn btn-outline-info ms-3" type="submit" name="searchBtn" style="border-radius: 90px;">Search</button>
                             </div>
                         </div>
                     </form>
