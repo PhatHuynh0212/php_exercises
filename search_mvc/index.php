@@ -37,7 +37,7 @@
 
                 if (isset($_GET['q'])) {
                     $searchQuery = $_GET['q'];
-                    $filmController->displaySearchResults($searchQuery);
+                    $filmController->displayResults($searchQuery);
                 } else {
                     $filmController->displayProducts();
                 }

@@ -16,7 +16,7 @@ class FilmController {
 
             echo "<div class='col-md-4'>";
             echo "<div class='card' style='background: transparent;'>";
-            echo "<img src='{$film->getAnh()}' class=' img-fluid' alt='Film Image'>";
+            echo "<img src='{$film->getAnh()}' class='img-fluid' alt='Film Image'>";
             echo "<div class='card-body'>";
             echo "<h5 class='card-title text-center'>{$film->getTen()}</h5>";
             echo "<p class='card-text'>Đánh giá: {$film->getDanhGia()} ⭐️</p>";
@@ -29,7 +29,7 @@ class FilmController {
         giaiPhongBoNho($link, $result);
     }
 
-    public function displaySearchResults($searchQuery) {
+    public function displayResults($searchQuery) {
         $link = null;
         taoKetNoi($link);
 
